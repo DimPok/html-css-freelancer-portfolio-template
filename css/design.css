@@ -1,0 +1,230 @@
+:root {
+    --mainFont: 'Staatliches', cursive;
+    --primary: #FBD85D;
+    --secondary: #9AC5F4;
+    --light: #ffffff;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--mainFont);
+}
+.container {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 2.6rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 2.3rem;
+}
+p {
+    font-size: 1.8rem;  
+    line-height: 2rem;
+}
+
+.graphelement {
+    background-image: url(../img/shapka.png);
+    background-size: cover;
+    height: 100vh;
+    color: #FEFBF3;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+    text-align: center;   
+}
+
+
+.graphelement .tagline {
+    margin-top: 2rem;
+    font-size: 2.3rem;  
+
+}
+
+
+
+.graphelement .container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 2rem;
+    align-content: center;
+}
+
+
+.mouuslugi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 3rem;
+}
+
+
+.usluga  {
+    margin-top: 2.8rem;
+    text-align: center;
+}
+
+
+.usluga h2::after {
+    height: .5rem;
+    width: 6.5rem;
+    background-color: var(--primary);
+    content: '';
+    display: block;
+    margin: 1rem auto 0 auto;
+
+}
+
+
+.usluga i {
+    font-size: 3rem;
+    color: var(--secondary);
+}
+
+
+.content {
+    background-color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+.content h3 {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.content p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.content span {
+    color:#db008d;
+}
+.button {
+    background-color: #008fd1;
+    color: white;
+    padding: .6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+article img {
+    border-radius: 30px;
+}
+
+@media screen and (min-width:480px) {
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entry {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .entry {
+        flex: 0 1 calc(33% - 1rem);
+    }
+}
+
+
+
+.socialblock ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.socialblock ul li {
+    flex: 0 0 50%;
+    padding: 2rem;
+}
+
+@media (min-width:768px) {
+    .socialblock ul li {
+        flex: 0 0 25%;
+    }
+}
+
+
+.socialblock ul li:nth-child(1) {
+    background-color: deepskyblue;
+}
+
+.socialblock ul li:nth-child(3) {
+    background-color: #db008d;
+}
+
+
+.socialblock ul li:nth-child(2) {
+    background-color: #0A6EBD;
+}
+
+
+.socialblock ul li:nth-child(4) {
+    background-color: #4F709C;
+}
+
+
+.socialblock ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.socialblock ul li a i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+footer {
+    background-image: url(../img/kontaktinfo.png);
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    color: var(--light);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+
+}
+
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.copyright {
+    margin: 1rem 0;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}

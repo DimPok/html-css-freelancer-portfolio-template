@@ -1,0 +1,3 @@
+This template was made in pure HTML and CSS for a freelance portfolio site. This template is simple and stylish, it was optimized for SEO and mobile devices. If someone wants to use this template for their own purposes, they can replace the titles, pictures and links to their own in it
+
+P.S. In the future, based on this template, they can make a full-fledged and multi-page website with multimedia elements.
